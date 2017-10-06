@@ -1,0 +1,26 @@
+﻿--output-file=<file>                            Output file path. Existing file will be overwritten.
+
+--output-directory=<dir>                        Output directory. Directory may contain chars for defining it by current date (use --utc-date for UTC).
+                                                    {0} = day (1 or 2 chars)
+                                                    {1} = month (1 or 2 chars)
+                                                    {2} = day of year (1 to 3 chars)
+                                                    {3} = year (4 chars)
+                                                    {4} = year (last 2 chars)
+                                                You can use more complex parameters. See C#'s string.Format().
+
+--format=<date_format>                          Prefix date format. Text starts after this.
+                                                Default: hh:MM:ss
+
+-u                                              Use date in UTC
+--utc-date
+
+--brackets=round/square/curly/angle/none        Type of brackets around date.
+                                                Default: square
+
+--prefix=<dist>                                 Prefix distance of line start from left in number of characters. ignored when lower then length of --output-file-format.
+
+--line-break=r/n/rn/nr                          Change input line break.
+
+
+-n                                              Disable printing to console.
+--no-print
